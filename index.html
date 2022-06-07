@@ -16,7 +16,7 @@
 
         <nav>
             <figure>
-                <img id="personal-logo" src="./assets/JS.png" alt="">
+                <img id="personal-logo" src="./assets/I will (1).png" alt="">
             </figure>
             <ul class="nav__link--list">
                 <li class="nav__link">
@@ -40,7 +40,7 @@
                     link__hover-effect--black
                     ">Contact</a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -64,17 +64,17 @@
                     <a href="" target="_blank" class="social__link click">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="" target="_blank" class="social__link click">
+                    <a href="https://github.com/JSShant" target="_blank" class="social__link click">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="" target="_blank" class="social__link click">
                         <i class="fas fa-file-pdf"></i>
                     </a>
                 </div>
-                
+
             </div>
         </header>
-        
+
         <button class="mail__btn click" onclick="toggleModal()">
             <i class="fas fa-envelope"></i>
         </button>
@@ -88,26 +88,34 @@
                 <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
                 <h4 class="modal__subtitle modal__subtitle--about">Frontend Software Engineer</h4>
                 <p class="modal__para">
-                    I'm a 24 year-old Australian <b class="orange">frontend software engineer</b> with a strong 
+                    I'm a 24 year-old Australian <b class="orange">frontend software engineer</b> with a strong
                     passion for developing websites with great <b class="orange">user experiences.</b>
                     <br>
                     A bit more about me, sell yourself - what do you know
                 </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                            alt="">
                         <span class="language__name">HTML</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                            alt="">
                         <span class="language__name">HTML</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                            alt="">
                         <span class="language__name">HTML</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                            alt="">
                         <span class="language__name">HTML</span>
                     </figure>
                 </div>
@@ -121,24 +129,24 @@
                 <h4 class="modal__subtitle modal__subtitle--contact">
                     Im currently open to new opportunities.
                 </h4>
-                <form action="" id="contact__form">
+                <form action="" id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
-                        <input type="text" class="input" name="user_name" required></input>
+                        <input type="text" class="input" name="user_name"></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Email</label>
-                        <input type="email" class="input" name="user_email" required></input>
+                        <input type="email" class="input" name="user_email"></input>
                     </div>
-                    <div class="form__item">  
+                    <div class="form__item">
                         <label class="form__item--label">Message</label>
-                        <textarea type="text" class="input" name="message" required></textarea>
+                        <textarea type="text" class="input" name="message"></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">
                         Send it my way
                     </button>
                 </form>
-                
+
                 <div class="modal__overlay modal__overlay--loading">
                     <i class="fas fa-spinner"></i>
                 </div>
@@ -148,7 +156,7 @@
                 </div>
             </div>
 
-        </div>                 
+        </div>
 
     </section>
 
@@ -172,8 +180,8 @@
                                 </h4>
                                 <p class="project__description--para">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Sunt iure cupiditate rerum eaque aliquid 
-                                    quaerat non sed sit ab, incidunt esse perferendis 
+                                    elit. Sunt iure cupiditate rerum eaque aliquid
+                                    quaerat non sed sit ab, incidunt esse perferendis
                                     aspernatur, dignissimos ea ex ullam official.
                                 </p>
                                 <div class="project__description--links">
@@ -199,8 +207,8 @@
                                 </h4>
                                 <p class="project__description--para">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Sunt iure cupiditate rerum eaque aliquid 
-                                    quaerat non sed sit ab, incidunt esse perferendis 
+                                    elit. Sunt iure cupiditate rerum eaque aliquid
+                                    quaerat non sed sit ab, incidunt esse perferendis
                                     aspernatur, dignissimos ea ex ullam official.
                                 </p>
                                 <div class="project__description--links">
@@ -226,8 +234,8 @@
                                 </h4>
                                 <p class="project__description--para">
                                     Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Sunt iure cupiditate rerum eaque aliquid 
-                                    quaerat non sed sit ab, incidunt esse perferendis 
+                                    elit. Sunt iure cupiditate rerum eaque aliquid
+                                    quaerat non sed sit ab, incidunt esse perferendis
                                     aspernatur, dignissimos ea ex ullam official.
                                 </p>
                                 <div class="project__description--links">
@@ -250,7 +258,7 @@
         <div class="container">
             <div class="row footer__row">
                 <figure>
-                    <img class="footer__logo--img" src="./assets/JS.png" alt="">
+                    <img class="footer__logo--img" src="./assets/I will (1).png" alt="">
                 </figure>
                 <div class="footer__social--list">
                     <a href="#" class="
@@ -280,10 +288,10 @@
 
                 <div class="footer__copyright">Copyright &copy; 2022 Joshua Shanthikumar</div>
 
-            </div>  
+            </div>
         </div>
 
-        
+
     </footer>
 </body>
 
