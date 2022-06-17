@@ -22,8 +22,8 @@ section {
 }
 
 
-.orange {
-    color: #f06449 !important;
+.blue {
+    color: rgb(94, 137, 218) !important;
 }
 
 p {
@@ -160,7 +160,7 @@ LANDING PAGE
 }
 
 .social__link {
-    background-color: #f06449;
+    background-color: rgb(94, 137, 218);
     color: white;
     padding: 6px;
     width: 32px;
