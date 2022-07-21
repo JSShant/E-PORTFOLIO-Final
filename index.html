@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("FxOlAJu8N7n00174f");
+    })();
+    </script>
 </head>
 
 <body>
@@ -55,7 +63,7 @@
                 <h1 class="title">Hey</h1>
                 <h1 class="title blue">I'm Joshua.</h1>
                 <p class="header__para">
-                    I'm a <b class="blue">Frontend Software Engineer</b> with a strong passion
+                    I'm an aspiring <b class="blue">Frontend Software Engineer</b> with a strong passion
                     for building web applications with greater user experiences.
                     <br>
                     Here's a bit more <b class="blue click" onclick="toggleModal()">about me.</b>
@@ -67,9 +75,9 @@
                     <a href="https://github.com/JSShant" target="_blank" class="social__link click">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="" target="_blank" class="social__link click">
+                    <!-- <a href="" target="_blank" class="social__link click">
                         <i class="fas fa-file-pdf"></i>
-                    </a>
+                    </a> -->
                 </div>
 
             </div>
@@ -115,9 +123,21 @@
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img"
-                            src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                            src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png"
                             alt="">
-                        <span class="language__name">TypeScript</span>
+                        <span class="language__name">Github</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://cdn.iconscout.com/icon/free/png-256/git-225996.png"
+                            alt="">
+                        <span class="language__name">Git</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://cdn.iconscout.com/icon/free/png-256/npm-3445767-2878693.png"
+                            alt="">
+                        <span class="language__name">NPM</span>
                     </figure>
                 </div>
             </div>
@@ -133,15 +153,15 @@
                 <form action="" id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
-                        <input type="text" class="input" name="user_name"></input>
+                        <input type="text" class="input" name="user_name" required></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Email</label>
-                        <input type="email" class="input" name="user_email"></input>
+                        <input type="email" class="input" name="user_email" required></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Message</label>
-                        <textarea type="text" class="input" name="message"></textarea>
+                        <textarea type="text" class="input" name="message" required></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">
                         Send it my way
@@ -180,26 +200,24 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/Bankist.jpg" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    This is my project
+                                    Bankist
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    Html, CSS, JavaScript, Vue, Vuex
+                                    Html, CSS, JavaScript
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Sunt iure cupiditate rerum eaque aliquid
-                                    quaerat non sed sit ab, incidunt esse perferendis
-                                    aspernatur, dignissimos ea ex ullam official.
+                                    A responsive banking website with a minamalistic design.<br>
+                                    This projects key objectives was to showcase (PUT CSS STUFF FROM NOTES) and showcase visual effects through advanced DOM manipulation using JavaScript.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="" class="project__description--link">
+                                    <a href="https://github.com/JSShant/Bankist---Banking-Website" target="_blank" class="project__description--link">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="" class="project__description--link">
+                                    <a href="https://bankist-banking.netlify.app/" target="_blank" class="project__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
                                 </div>
@@ -233,32 +251,6 @@
                             </div>
                         </div>
 
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    This is my project
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    Html, CSS, JavaScript, Vue, Vuex
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing
-                                    elit. Sunt iure cupiditate rerum eaque aliquid
-                                    quaerat non sed sit ab, incidunt esse perferendis
-                                    aspernatur, dignissimos ea ex ullam official.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </li>
                 </ul>
             </div>
