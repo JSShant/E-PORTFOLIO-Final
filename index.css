@@ -335,6 +335,10 @@ PROJECTS
     margin-top: 8px;
 }
 
+.project__description--links {
+    margin-top: 10px;
+}
+
 .project__description--link {
     color: white;
     font-size: 20px;
