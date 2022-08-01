@@ -163,10 +163,10 @@ LANDING PAGE
     background-color: rgb(94, 137, 218);
     color: white;
     padding: 6px;
-    width: 32px;
-    height: 32px;
-    font-size: 14px;
-    margin-right: 12px;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    margin-right: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
